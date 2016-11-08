@@ -19,47 +19,107 @@ body {
 
 h1{
 	font-family: 'Londrina Shadow', cursive;
-	font-size: 4em;
+	font-size: 70px;
 	text-align: center;
-	margin-bottom: 5px;
+	margin:0;
+	
+	clear: both;
+	width: 100%
 }
 h2 {
+
 	margin-top: 5px;
 	text-align: center;
+	clear: both;
 
 
 }
 #main-column{
-	width: 750px;
+	width: 80%;
 	float:left;
 	height: 400px;
+	clear: both;
 }
 
+/*Why does the formatting work better without height?*/
 .nav-bar {
-	
+	position: relative;
 	clear:both;
-	height: 300px;
+	
+	margin-right: 0;
 
 }
 
-img {
-	display: inline-block;
+.brains img {
+
+	float: left;
 	width: 5%;
 	margin: 7%;
 	margin-bottom: 5px;
 	margin-top:5px;
-
 }
 
 #first-brain{
-	margin-left:70px;
+	margin-left: 10%;
+}
 
+#second-brain{
+	margin-left: 6.5%;
+}
+
+#third-brain{
+	margin-left: 6%;
+}
+
+#fourth-brain{
+	margin-left: 7%;
 }
 
 #last-brain{
-	margin-right: 0px;
+	margin-left: 6%;
+	margin-right: 5%;
 }
 
+
+
+.noses img {
+	
+	float: left;
+	width: 5%;
+	margin: 7.5%;
+	margin-bottom: 5px;
+	margin-top:5px;
+}
+
+#first-nose{
+	margin-left: 7%;
+}
+
+#second-nose{
+	margin-left: 6%;
+}
+
+#third-nose{
+	margin-left: 6%; 
+	margin-right:6%;
+}
+
+#fourth-nose{
+	margin-right: 6%;
+}
+
+#last-nose{
+	margin-right: 0;
+}
+
+.hands img {
+
+	float: left;
+	width: 5%;
+	margin: 0 7% 0 7%;
+	margin-bottom: 5px;
+	
+}
 
 ul {
 	padding-left: 0;
@@ -69,16 +129,19 @@ ul {
 
 li {
 	font-family: 'Londrina Solid', cursive;
-	display: inline-block;
+	float: left;
+	list-style-type: none;
 	/*why doesn't 20% size work?*/
-	width: 7%;
-	height: 40px;
-	margin-left: 7%;
-	margin-right:5%;
-	padding-top: 20px;
+	width: 18%;
+	
+	margin-top: 5px;
+	margin-bottom: 20px;
+	height: 30px;
+	
+	border:	solid black 2px;
 	background-color: grey;
 	text-align: center;
-	border-radius: 200%;
+	
 	font-size: 10px;
 
 	
@@ -86,27 +149,31 @@ li {
 
 #red{
 	/* sanguine*/
+	padding-top: 10px;
 	background-color: #F76F6F;
-	margin-left: 40px;
-	margin-right: 40px;
+	
 }
 
 #yellow{
+	padding-top: 10px;
 	background-color: #fff380;
 }
 
 #green{
+	padding-top: 10px;
 	/*darkseagreen*/
 	background-color: #8FBC8F;
 }
 
 #blue{
+	padding-top: 10px;
 	/*powder blue*/
 	background-color: #B0E0E6;
 }
 
 #violet{
 	background-color: #d8bfd8;
+	height: 40px;
 }
 
 
@@ -115,20 +182,21 @@ li {
 }
 
 #right-side-bar{
-	width:19%;
+	width:20%;
 	height:300px;
 	padding-top: 20px;
+	position: relative;
 	float: right;
 	
 }
 #right-side-bar img{
-
-	height: 200px;
-	width: auto;
+	width: 15%;
+	height: auto;
 
 	border: 3px black solid;
 	position: fixed;
-	right: -5px;
+	right: 2%;
+	
 }
 #about {
 	width: 80%;
@@ -136,6 +204,8 @@ li {
 	float: left;
 	clear: both;
 }
+
+
 
 .mural{
 	height:200px;
