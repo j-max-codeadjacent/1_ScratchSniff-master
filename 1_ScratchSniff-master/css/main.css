@@ -12,26 +12,33 @@
 .clearfix:after {
     clear: both;
 }
-
+html{
+	
+}
 body {
 	font-family: 'Londrina Solid', cursive;
 }
 
 h1{
-	font-family: 'Londrina Shadow', cursive;
-	font-size: 70px;
+	font-family: 'Londrina Solid', cursive;
+	font-size: 4em;
 	text-align: center;
 	margin:0;
-	
+	float: left;
+	height: 85px;
 	clear: both;
-	width: 100%
+	width: 100%;
+	background: white;
 }
 h2 {
-
+	height: 30px;
+	width: 100%;
 	margin-top: 5px;
 	text-align: center;
 	clear: both;
-
+	float: left;
+	background:white;
+	margin:0;
 
 }
 #main-column{
@@ -42,153 +49,102 @@ h2 {
 }
 
 /*Why does the formatting work better without height?*/
-.nav-bar {
+nav {
 	position: relative;
 	clear:both;
-	
+	width: 100%;
+	float: left;
+	height: 285px;
 	margin-right: 0;
+	background: white;
+}
+
+.nav-column{
+	position: relative;
+	float:left;
+	width: 20%;
+	height: 250px;
+	background: none;
 
 }
 
-.brains img {
-
-	float: left;
-	width: 5%;
-	margin: 7%;
-	margin-bottom: 5px;
-	margin-top:5px;
+.nav-column a {
+	text-decoration: none;
+	color: black;
 }
 
-#first-brain{
-	margin-left: 10%;
+.brain-nose{
+	width: 100px;
+	height: auto;
+	left: 30%;
+	/*made this absolute and nav-column relative to make the brain-nose stay in place relatively.*/
+	position: absolute;
+
 }
 
-#second-brain{
-	margin-left: 6.5%;
+.hand{
+	width: 50px;
+	position: absolute;
+	top: 90%;
 }
 
-#third-brain{
-	margin-left: 6%;
-}
-
-#fourth-brain{
-	margin-left: 7%;
-}
-
-#last-brain{
-	margin-left: 6%;
-	margin-right: 5%;
-}
-
-
-
-.noses img {
 	
-	float: left;
-	width: 5%;
-	margin: 7.5%;
-	margin-bottom: 5px;
-	margin-top:5px;
-}
 
-#first-nose{
-	margin-left: 7%;
-}
 
-#second-nose{
-	margin-left: 6%;
-}
 
-#third-nose{
-	margin-left: 6%; 
-	margin-right:6%;
-}
-
-#fourth-nose{
-	margin-right: 6%;
-}
-
-#last-nose{
-	margin-right: 0;
-}
-
-.hands img {
-
-	float: left;
-	width: 5%;
-	margin: 0 7% 0 7%;
-	margin-bottom: 5px;
-	
-}
-
-ul {
-	padding-left: 0;
-	margin-left: 5px;
-	margin-bottom: 0;
-}
-
-li {
-	font-family: 'Londrina Solid', cursive;
-	float: left;
-	list-style-type: none;
-	/*why doesn't 20% size work?*/
-	width: 18%;
-	
-	margin-top: 5px;
-	margin-bottom: 20px;
-	height: 30px;
-	
-	border:	solid black 2px;
-	background-color: grey;
+.nav-link{
+	position: absolute;
+	top: 70%;
+	width: 100%;
+	height: 50px;
 	text-align: center;
-	
-	font-size: 10px;
-
-	
 }
 
 #red{
 	/* sanguine*/
-	padding-top: 10px;
+	
 	background-color: #F76F6F;
 	
 }
 
 #yellow{
-	padding-top: 10px;
+	
 	background-color: #fff380;
 }
 
 #green{
-	padding-top: 10px;
+	
 	/*darkseagreen*/
 	background-color: #8FBC8F;
 }
 
 #blue{
-	padding-top: 10px;
+	
 	/*powder blue*/
 	background-color: #B0E0E6;
 }
 
 #violet{
 	background-color: #d8bfd8;
-	height: 40px;
+
 }
 
-
 #first-hand{
-	margin-left: 20px;
+
 }
 
 #right-side-bar{
 	width:20%;
-	height:300px;
+	height: 5000px;
+	background: white;
 	padding-top: 20px;
 	position: relative;
 	float: right;
-	
+
+
 }
+
+/*fix image on screen but have background cover the mural part*/
 #right-side-bar img{
 	width: 15%;
 	height: auto;
@@ -196,64 +152,171 @@ li {
 	border: 3px black solid;
 	position: fixed;
 	right: 2%;
-	
 }
+
+.hidden{
+	display: none;
+}
+.show{
+	display:inline;
+}
+
 #about {
 	width: 80%;
-	height: 500px;
 	float: left;
-	clear: both;
+	background: none;
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+	clear:left;
+
 }
 
 
+p{
+	margin:0;
+}
+.about-text{
+	background: white;
+	width: 100%;
+	height: 100px;
+	margin: 0;
+
+}
 
 .mural{
-	height:200px;
+	height:300px;
 	background-attachment: fixed;
 	background-size: 75%;
 }
-#about-author-mural{
 
-	background-image: url("../images/Murals/flourish.jpg");
+#project-sum-mural{
+	
+	background-image: url("../images/Murals/combray.jpg");
+	background-attachment: fixed;
+	background-size: 75%;
 }
+
 
 #about-author {
-	height: 200px;
-	background-color: pink;
-}
+	
+		height:100px;
 
-#about-artist-mural{
-	background-image: url("../images/Murals/combray.jpg");
 
 }
+
+#about-author-mural {
+	background-image: url("../images/Murals/combray.jpg");	
+	background-attachment: 	fixed;
+	background-size: 75%;
+}
+
+
 
 #about-artist {
 	height: 200px;
-	background-color: pink;
 }
 
-#neuroscience-of-smell-mural{
-	background-image: url("../images/Murals/stairs.jpg");
+#about-artist-mural {
+	background-image: url("../images/Murals/combray.jpg");	
+	background-attachment: 	fixed;
+	background-size: 75%;
 }
 
 #neuroscience-of-smell{
 	height: 200px;
-	background-color: pink;
-}
-#first-chapter-mural{
-	background-image: url("../images/Murals/hawthorns.jpg");
+	background-image: url("../images/Murals/stairs.jpg");
+	background-attachment: 	fixed;
+	background-size: 1000px;
 }
 
 #first-chapter{
 	height: 200px;
-	background-color: pink;
+	background-image: url("../images/Murals/hawthorns.jpg");
+	background-attachment: 	fixed;
+	background-size: 1000px;
 }
 
-#events-mural{
-	background-image: url("../images/Murals/asparagus.jpg");
-}
 
 #events{
 	height: 200px;
-	background-color: pink;
+	background-image: url("../images/Murals/asparagus.jpg");
+	background-attachment: 	fixed;
+	background-size: 1000px;
+}
+
+/*keyframe that moves the hand up and then wiggles to imitate scratching the link*/
+@keyframes scratch{
+   
+
+	100% {top: 80%;} 
+	50% {left: 0%;}
+	55% {left: 30%;}
+	60% {left: 0%;}
+   	65% {left: 30%;}
+   	70% {left: 0;}
+   	75% {left: 30%;}
+   	80% {left: 0;}
+   	85% {left: 30%;}
+   
+   
+   
+}
+@-webkit-keyframes scratch {
+   
+
+	100% {top: 80%;} 
+	50% {left: 0%;}
+	55% {left: 30%;}
+	60% {left: 0%;}
+   	65% {left: 30%;}
+   	70% {left: 0;}
+   	75% {left: 30%;}
+   	80% {left: 0;}
+   	85% {left: 30%;}
+   
+}
+
+@-moz-keyframes scratch {
+     
+	
+	100% {top: 80%;} 
+	50% {left: 0%;}
+	55% {left: 30%;}
+	60% {left: 0%;}
+   	65% {left: 30%;}
+   	70% {left: 0;}
+   	75% {left: 30%;}
+   	80% {left: 0;}
+   	85% {left: 30%;}
+   
+}
+
+
+.animate {
+	animation: scratch ease-in-out 1s 1;
+	
+}
+
+.smell-line{ 
+
+		-webkit-transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    -o-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	    transform: rotate(90deg);
+		position: absolute;
+		bottom: 30%;
+		left:47%;
+	}
+
+#two{
+	bottom: 35%;
+}
+
+#three{
+	bottom: 40%;
+}
+
+#four {
+	bottom: 45%;
 }

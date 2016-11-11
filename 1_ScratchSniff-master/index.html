@@ -9,6 +9,7 @@
 	<!-- Put your web fonts here -->
 	<link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -21,68 +22,90 @@
 			<h2>by Virginia Barry, M.D. with artwork by Heather Hancock</h2>
 		</header>
 		
-			<div class = "nav-bar">	
-				<div class="brains">
-					<img id="first-brain" src="images/Brain/Brain.png" alt="brain">
-					<img id="second-brain" src="images/Brain/Brain.png" alt="brain">
-					<img id="third-brain" src="images/Brain/Brain.png" alt="brain">
-					<img id="fourth-brain" src="images/Brain/Brain.png" alt="brain">
-					<img id="last-brain" src="images/Brain/Brain.png" alt="brain">
-				</div>
-		
-
-			<div class="noses">
-				<img id="first-nose" src="images/Noses/nose-black.png" alt="sniffing nose">
-				<img id="second-nose" src="images/Noses/nose-black.png" alt="sniffing nose">
-				<img id="third-nose" src="images/Noses/nose-black.png" alt="sniffing nose">
-				<img id="fourth-nose" src="images/Noses/nose-black.png" alt="sniffing nose">
-				<img id="last-nose" src="images/Noses/nose-black.png" alt="sniffing nose">
-			</div>
-
-			<ul>
-				<li id="red">About <br> the author</li>
-				<li id="yellow">About <br> the artist</li>
-				<li id="green">Neuroscience<br> of Smell</li>
-				<li id="blue">First<br> chapter</li>
-				<li id="violet"><br>Events</li>
-			</ul>
-			<div class="hands">
-				<img id="first-hand" src="images/Hands/hand.png" alt="scratching hand">
-				<img src="images/Hands/hand.png" alt="scratching hand">
-				<img src="images/Hands/hand.png" alt="scratching hand">
-				<img src="images/Hands/hand.png" alt="scratching hand">
-				<img src="images/Hands/hand.png" alt="scratching hand">
-			</div>
-		</div>
+		<!--want to try to float nav left-->
+			<nav class="clearfix">
+				
+					<div class="nav-column">
+						<img class="brain-nose" id="first-brain-nose" src="images/Brain-nose/brain-nose-black.png" alt="brain plus nose">
+						<div class="nav-link" id="red"><a href="#about-author">About <br> the author</a></div>
+						<img class="hand" id="first-hand"  src="images/Hands/hand.png" alt="scratching hand">
+						<div class="smell-line">~</div>
+						<div class="smell-line" id="two">~</div>
+						<div class="smell-line" id="three">~</div>
+						<div class="smell-line" id="four">~</div>
+					</div>
+					<div class="nav-column" i>
+						<img class="brain-nose" id="second-brain-nose" src="images/Brain-nose/brain-nose-black.png" alt="brain plus nose">
+						<div class="nav-link" id="yellow"><a href="#about-artist">About <br> the artist</a></div>
+						<img class="hand" id="second-hand" src="images/Hands/hand.png" alt="scratching hand">
+						<div class="smell-line">~</div>
+						<div class="smell-line" id="two">~</div>
+						<div class="smell-line" id="three">~</div>
+						<div class="smell-line" id="four">~</div>
+					</div>
+					<div class="nav-column">
+						<img class="brain-nose" id="third-brain-nose" src="images/Brain-nose/brain-nose-black.png" alt="brain plus nose">
+						<div class="nav-link" id="green"><a href="#neuroscience-of-smell">Neuroscience<br> of Smell</a></div>
+						<img class="hand" id="third-hand" src="images/Hands/hand.png" alt="scratching hand">
+						<div class="smell-line">~</div>
+						<div class="smell-line" id="two">~</div>
+						<div class="smell-line" id="three">~</div>
+						<div class="smell-line" id="four">~</div>
+					</div>	
+					<div class="nav-column" >
+						<img class="brain-nose" id="fourth-brain-nose" src="images/Brain-nose/brain-nose-black.png" alt="brain plus nose">
+						<div class="nav-link" id="blue"><a href="#first-chapter">First<br> chapter</a></div>
+						<img class="hand" id="fourth-hand" src="images/Hands/hand.png" alt="scratching hand">
+						<div class="smell-line">~</div>
+						<div class="smell-line" id="two">~</div>
+						<div class="smell-line" id="three">~</div>
+						<div class="smell-line" id="four">~</div>
+					</div>	
+					<div class="nav-column">
+						<img class="brain-nose" id="fifth-brain-nose" src="images/Brain-nose/brain-nose-black.png" alt="brain plus nose">
+						<div class="nav-link" id="violet"><a href="#events">Events</a></div>
+						<img class="hand" id="fifth-hand" src="images/Hands/hand.png" alt="scratching hand">
+						<div class="smell-line">~</div>
+						<div class="smell-line" id="two">~</div>
+						<div class="smell-line" id="three">~</div>
+						<div class="smell-line" id="four">~</div>
+					</div>		
+					
+			</nav>
 	</div>
 
 	<div id="right-side-bar">
 		<img id="proust" src="images/Proust.jpg" alt="Marcel Proust">
+		<img id="barry" class="hidden" src="images/barry.jpeg" alt="Virginia Barry">
 	</div>
 
 <div id="about">
-	<div id="project-summary">
-		<p>The prose of Marcel Proust, 20th-century French modernist, transports his reader down Swann's Way through his words' mastery of sensation.  Early and often, his poignent descriptions of scent engage an instant transportation into the minds of his characters.  Dr. Virginia Barry, psychiatrist and psychoanolist, investigates the neurobiological architecture behind Proust's techniques.  In a fanciful twist on In Remembrance of Time Past, Dr. Barry provides a set of scratch and sniff scents and scientific discussions to illustrate the direct neural connection between scent and memory. Together with the stunning mural work of Chicago artist Heather Hancock, Dr. Barry opens up a fresh and exciting new way to interpret Proust's masterpiece.</p>
-	</div>
-	<div class ="mural" id="about-author-mural">
+	<div class = "mural" id="project-sum-mural"></div>
+	<div  id="project-summary">
+		<p class="about-text">The prose of Marcel Proust, 20th-century French modernist, transports his reader down Swann's Way through his words' mastery of sensation.  Early and often, his poignent descriptions of scent engage an instant transportation into the minds of his characters.  Dr. Virginia Barry, psychiatrist and psychoanalyst, investigates the neurobiological architecture behind Proust's techniques.  In a fanciful twist on In Remembrance of Time Past, Dr. Barry provides a set of scratch and sniff scents and scientific discussions to illustrate the direct neural connection between scent and memory. Together with the stunning mural work of Chicago artist Heather Hancock, Dr. Barry opens up a fresh and exciting new way to interpret Proust's masterpiece.</p>
 	</div>
 	<div id="about-author">
+		<p class="about-text"> </p>
+		<div class="mural" id="about-author-mural"></div>
 	</div>
-	<div class="mural" id="about-artist-mural">
-	</div>
+
 	<div id="about-artist">
-	</div>
-	<div class ="mural" id="neuroscience-of-smell-mural">
+		<p class="about-text"> </p>
+		<div class="mural" id="about-artist-mural"></div>
 	</div>
 	<div id="neuroscience-of-smell">
+		<p class="about-text"> </p>
+		<div class="mural" id="neuroscience-of-smell-mural"></div>
 	</div>
-	<div class="mural" id="first-chapter-mural">
-	</div>
+	
 	<div id="first-chapter">
+		<p class="about-text"> </p>
+		<div class="mural" id="first-chapter-mural"></div>
 	</div>
-	<div class="mural" id="events-mural">
-	</div>
-	<div id="events">
+	
+	<div  id="events">
+		<p class="about-text"> </p>
+		<div class="mural" id="events-mural"></div>
 	</div>
 	
 </div>	
