@@ -1,3 +1,8 @@
+<!--add about author-->
+<!--add about artist-->
+<!--add url link to book chapter-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +15,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -17,53 +23,54 @@
 <body>
 
 	<div id="main-column">
-		<header>
-			<h1>Scratch and Sniff Proust</h1>
-			<h2>by Virginia Barry, M.D. with artwork by Heather Hancock</h2>
-		</header>
-		
+		<div id="clearfix">
+			<header>
+				<h1>Scratch and Sniff Proust</h1>
+				<h2>Making Sense of Scents and Sentiments</h2>
+				<h2>by Virginia Barry, M.D. with artwork by Heather Hancock</h2>		
+			</header>
+		</div>
 		<!--want to try to float nav left-->
 			<nav class="clearfix">
-				
-					<div class="nav-column">
-						<img class="brain-nose" id="first-brain-nose" src="images/Brain-nose/brain-nose-black.png" alt="brain plus nose">
+					
+
+					<div id="zero-nav-column" class="nav-column">
+						<img class="brain-nose" id="first-brain-nose" src="images/Brain-nose/brain-nose-pink.jpg" alt="brain plus nose">
+						<div class="nav-link" id="red"><a href="#about-project">About <br> the project</a></div>
+						<img class="hand" id="zero-hand"  src="images/Hands/hand.png" alt="scratching hand">
+						<div class="smell-line">~</div>
+					</div>
+					<div id="first-nav-column" class="nav-column">
+						<img class="brain-nose" id="first-brain-nose" src="images/Brain-nose/brain-nose-pink.jpg" alt="brain plus nose">
 						<div class="nav-link" id="red"><a href="#about-author">About <br> the author</a></div>
 						<img class="hand" id="first-hand"  src="images/Hands/hand.png" alt="scratching hand">
 						<div class="smell-line">~</div>
-						<div class="smell-line" id="two">~</div>
-						<div class="smell-line" id="three">~</div>
-						<div class="smell-line" id="four">~</div>
+				
 					</div>
 					<div class="nav-column" i>
-						<img class="brain-nose" id="second-brain-nose" src="images/Brain-nose/brain-nose-black.png" alt="brain plus nose">
+						<img class="brain-nose" id="second-brain-nose" src="images/Brain-nose/brain-nose-pink.jpg" alt="brain plus nose">
 						<div class="nav-link" id="yellow"><a href="#about-artist">About <br> the artist</a></div>
 						<img class="hand" id="second-hand" src="images/Hands/hand.png" alt="scratching hand">
 						<div class="smell-line">~</div>
-						<div class="smell-line" id="two">~</div>
-						<div class="smell-line" id="three">~</div>
-						<div class="smell-line" id="four">~</div>
+					
 					</div>
 					<div class="nav-column">
-						<img class="brain-nose" id="third-brain-nose" src="images/Brain-nose/brain-nose-black.png" alt="brain plus nose">
+						<img class="brain-nose" id="third-brain-nose" src="images/Brain-nose/brain-nose-pink.jpg" alt="brain plus nose">
 						<div class="nav-link" id="green"><a href="#neuroscience-of-smell">Neuroscience<br> of Smell</a></div>
 						<img class="hand" id="third-hand" src="images/Hands/hand.png" alt="scratching hand">
 						<div class="smell-line">~</div>
-						<div class="smell-line" id="two">~</div>
-						<div class="smell-line" id="three">~</div>
-						<div class="smell-line" id="four">~</div>
+						
 					</div>	
 					<div class="nav-column" >
-						<img class="brain-nose" id="fourth-brain-nose" src="images/Brain-nose/brain-nose-black.png" alt="brain plus nose">
+						<img class="brain-nose" id="fourth-brain-nose" src="images/Brain-nose/brain-nose-pink.jpg" alt="brain plus nose">
 						<div class="nav-link" id="blue"><a href="#first-chapter">First<br> chapter</a></div>
 						<img class="hand" id="fourth-hand" src="images/Hands/hand.png" alt="scratching hand">
 						<div class="smell-line">~</div>
-						<div class="smell-line" id="two">~</div>
-						<div class="smell-line" id="three">~</div>
-						<div class="smell-line" id="four">~</div>
+					
 					</div>	
 					<div class="nav-column">
-						<img class="brain-nose" id="fifth-brain-nose" src="images/Brain-nose/brain-nose-black.png" alt="brain plus nose">
-						<div class="nav-link" id="violet"><a href="#events">Events</a></div>
+						<img class="brain-nose" id="fifth-brain-nose" src="images/Brain-nose/brain-nose-pink.jpg" alt="brain plus nose">
+						<div class="nav-link" id="event-box"><a href="#events">Events</a></div>
 						<img class="hand" id="fifth-hand" src="images/Hands/hand.png" alt="scratching hand">
 						<div class="smell-line">~</div>
 						<div class="smell-line" id="two">~</div>
@@ -75,36 +82,38 @@
 	</div>
 
 	<div id="right-side-bar">
-		<img id="proust" src="images/Proust.jpg" alt="Marcel Proust">
-		<img id="barry" class="hidden" src="images/barry.jpeg" alt="Virginia Barry">
+		<img  class="hidden" id="proust"  src="images/Proust.jpg" alt="Marcel Proust">
+		<img class="hidden" id="barry" src="images/barry.jpeg" alt="Virginia Barry">
 	</div>
 
-<div id="about">
-	<div class = "mural" id="project-sum-mural"></div>
-	<div  id="project-summary">
-		<p class="about-text">The prose of Marcel Proust, 20th-century French modernist, transports his reader down Swann's Way through his words' mastery of sensation.  Early and often, his poignent descriptions of scent engage an instant transportation into the minds of his characters.  Dr. Virginia Barry, psychiatrist and psychoanalyst, investigates the neurobiological architecture behind Proust's techniques.  In a fanciful twist on In Remembrance of Time Past, Dr. Barry provides a set of scratch and sniff scents and scientific discussions to illustrate the direct neural connection between scent and memory. Together with the stunning mural work of Chicago artist Heather Hancock, Dr. Barry opens up a fresh and exciting new way to interpret Proust's masterpiece.</p>
+
+	<div class="about-text" id="about-project">
+		<p >The prose of Marcel Proust, 20th-century French modernist, transports his reader down Swann's Way through his words' mastery of sensation.  Early and often, his poignent descriptions of scent engage an instant transportation into the minds of his characters.  Dr. Virginia Barry, psychiatrist and psychoanalyst, investigates the neurobiological architecture behind Proust's techniques.  In a fanciful twist on In Remembrance of Time Past, Dr. Barry provides a set of scratch and sniff scents and scientific discussions to illustrate the direct neural connection between scent and memory. Together with the stunning mural work of Chicago artist Heather Hancock, Dr. Barry opens up a fresh and exciting new way to interpret Proust's masterpiece.</p>
 	</div>
-	<div id="about-author">
-		<p class="about-text"> </p>
+	<div id="about"><div class = "mural" id="project-sum-mural"></div>
+
+	<div class="about-text" id="about-author">
+		<p > words words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words words</p>
+	
+	</div>
 		<div class="mural" id="about-author-mural"></div>
-	</div>
 
 	<div id="about-artist">
-		<p class="about-text"> </p>
+		<p class="about-text"> words words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words words</p>
 		<div class="mural" id="about-artist-mural"></div>
 	</div>
 	<div id="neuroscience-of-smell">
-		<p class="about-text"> </p>
+		<p class="about-text">words words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words words </p>
 		<div class="mural" id="neuroscience-of-smell-mural"></div>
 	</div>
 	
 	<div id="first-chapter">
-		<p class="about-text"> </p>
+		<p class="about-text"> words words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words words</p>
 		<div class="mural" id="first-chapter-mural"></div>
 	</div>
 	
 	<div  id="events">
-		<p class="about-text"> </p>
+		<p class="about-text">words words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words words </p>
 		<div class="mural" id="events-mural"></div>
 	</div>
 	

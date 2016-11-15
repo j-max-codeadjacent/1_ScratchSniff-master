@@ -1,31 +1,50 @@
 //all in two seconds//
-//after clicking the link, trigger keyframe which moves hand up and then back and forth to imitate scratching.//
+
+$(".nav-link").on("click", function(){
+	var el = $(this).siblings(".hand"); 
+	var newone = el.clone(true);
+	 el.before(newone); 
+     el.remove();
+ });
+  	
+       //after clicking the link, trigger keyframe which moves hand up and then back and forth to imitate scratching.//
+
 
 
  //delay removing the class so the link is clickable again. I'm not sure how this code works.
-$(".nav-link").on("click", function(){
-	var el     = $(this).siblings(".hand"),  
-		     newone = el.clone(true);
-		           
-		 el.before(newone);
-	        
-	 $(el).remove();
-});
+
 
 
 $(".nav-link").on("click", function(){
+
+
+	$(".brain-nose").css("display", "inline-block");
+	$("nav").css("background", "white");
 	
-
-	$(this).siblings(".hand").removeClass("animate");
-	$(this).siblings(".hand").addClass("animate");
+	$(this).siblings(".hand").removeClass("animateScratch");
+	$(this).siblings(".hand").addClass("animateScratch");
+	
 	//this works with .nav-link but not nav-link a//
 	//delay the link so the animation can run//
- 	var href = $("a", this).attr('href');
-	setTimeout(function() {window.location = href}, 2000);
-       return false;
+	
+	$(this).siblings(".smell-line").removeClass("animateSniff");
+	$(this).siblings(".smell-line").addClass("animateSniff");
+	
 
-      
+
+ 	var href = $("a", this).attr('href');
+	setTimeout(function() {
+		$('html, body').animate({scrollTop:$(href).position().top}, 'slow');
+	}, 1500);
+       return false;
+    
+
+
+  
 });
+
+
+
 
 
 
@@ -45,9 +64,14 @@ $(".nav-link").on("click", function(){
 
 window.onscroll = function() {authorPhoto()};
 function authorPhoto() {
-    if (document.body.scrollTop > 500) {
-    	$("img#proust").toggleClass("hidden");
-        $("img#barry").toggleClass("show");
+   	 if (document.body.scrollTop < 500) {
+    	$("#proust").addClass("show");
+        $("#barry").removeClass("show");
+    }
+
+    else if (document.body.scrollTop > 500) {
+    	$("#proust").removeClass("show");
+        $("#barry").addClass("show");
     }
 
 };
