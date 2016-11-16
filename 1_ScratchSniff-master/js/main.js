@@ -61,46 +61,25 @@ $(".nav-link").on("click", function(){
 
 
 //When scroll reaches #about author, replace proust with Virginia's image*/
+function proustPic(){
+	$("#proust").addClass("show");
+}
+
+window.addEventListener("load", proustPic, false);
 
 window.onscroll = function() {authorPhoto()};
 function authorPhoto() {
-   	 if (document.body.scrollTop < 500) {
+   	 if (document.body.scrollTop < 1200) {
     	$("#proust").addClass("show");
         $("#barry").removeClass("show");
     }
 
-    else if (document.body.scrollTop > 500) {
+    else if (document.body.scrollTop > 1000) {
     	$("#proust").removeClass("show");
         $("#barry").addClass("show");
     }
 
 };
-
-
-$("#first-brain").on({'click':function(){
-	$('#first-brain').attr('src', 'images/Brain/brain-red.png')
-	}
-});
-
-$("#second-brain").on({'click':function(){
-	$('#second-brain').attr('src', 'images/Brain/brain-yellow.png')
-	}
-});
-
-$("#third-brain").on({'click':function(){
-	$('#third-brain').attr('src', 'images/Brain/brain-green.png')
-	}
-});
-
-$("#fourth-brain").on({'click':function(){
-	$('#fourth-brain').attr('src', 'images/Brain/brain-blue.png')
-	}
-});
-
-$("#last-brain").on({'click':function(){
-	$('#last-brain').attr('src', 'images/Brain/brain-purple.png')
-	}
-});
 
 /*can't get this to work, so I'll sue fixed for now.
 $("#right-side-bar").scroll(function(){

@@ -152,8 +152,8 @@ nav {
 }
 
 #right-side-bar{
-	width:18%;
-	height: 5000px;
+	width:19%;
+	min-height: 5000px;
 	background: white;
 	padding-top: 20px;
 	position: relative;
@@ -177,6 +177,11 @@ nav {
 	right: 2%;
 }
 
+#barry{
+	width:30%;
+	height: auto;
+}
+
 .hidden{
 	display: none;
 }
@@ -196,17 +201,20 @@ nav {
 
 }
 
-
-p{
-	margin:0;
+.about-block{
+	min-height: 100px;
+	background-color: white;
+	padding: 10px;
 }
+
 .about-text{
 	background: white;
 	width: 100%;
 	min-height: 100px;
 	margin: 0;
-
+	padding:10px;
 }
+
 
 .mural{
 	height:300px;
@@ -231,10 +239,10 @@ p{
 }
 
 
-
-#about-artist {
-	height: 200px;
+#about-artist a{
+	margin-left: 20%;
 }
+
 
 #about-artist-mural {
 	background-image: url("../images/Murals/combray.jpg");	
@@ -244,9 +252,6 @@ p{
 
 #neuroscience-of-smell{
 	height: 200px;
-	background-image: url("../images/Murals/stairs.jpg");
-	background-attachment: 	fixed;
-	background-size: 1000px;
 }
 
 #first-chapter{
