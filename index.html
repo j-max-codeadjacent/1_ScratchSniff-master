@@ -1,85 +1,148 @@
+<!--add about author-->
+<!--add about artist-->
+<!--add url link to book chapter-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
-
-    <title>Scratch and Sniff Proust</title>
+    <title>Scratch and Sniff Proust: Making Sense of Scents and Sentiments</title>
 	<!-- Put your web fonts here -->
 	<link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-<div id="main-column">
-	<header>
-		<h1>Scratch and Sniff Proust</h1>
-		<h2>by Virginia Barry, M.D. with artwork by Heather Hancock</h2>
-	</header>
-	<div class = "nav-bar">	
-		<div class="brains">
-			<img id="first-brain" src="images/Brain/Brain.png" alt="brain">
-			<img id="second-brain" src="images/Brain/Brain.png" alt="brain">
-			<img id="third-brain" src="images/Brain/Brain.png" alt="brain">
-			<img id="fourth-brain" src="images/Brain/Brain.png" alt="brain">
-			<img id="last-brain" src="images/Brain/Brain.png" alt="brain">
-		</div>
+	<div id="left-side-bar">
+		<img id="brain" src="images/Brain/brain-white.png">
+		<div id="smell-line">~</div>
 
-		<div class="noses">
-			<img src="images/Noses/nose-black.png" alt="sniffing nose">
-			<img src="images/Noses/nose-black.png" alt="sniffing nose">
-			<img src="images/Noses/nose-black.png" alt="sniffing nose">
-			<img src="images/Noses/nose-black.png" alt="sniffing nose">
-			<img src="images/Noses/nose-black.png" alt="sniffing nose">
-		</div>
-
-		<ul>
-			<li id="red">About <br> the author</li>
-			<li id="yellow">About <br> the artist</li>
-			<li id="green">Neuroscience<br> of Smell</li>
-			<li id="blue">First<br> chapter</li>
-			<li id="violet"><br>Events</li>
-		</ul>
-		<div class="hands">
-			<img id="first-hand" src="images/Hands/hand.png" alt="scratching hand">
-			<img src="images/Hands/hand.png" alt="scratching hand">
-			<img src="images/Hands/hand.png" alt="scratching hand">
-			<img src="images/Hands/hand.png" alt="scratching hand">
-			<img src="images/Hands/hand.png" alt="scratching hand">
-		</div>
+		<img id="big-nose" src="images/Noses/nose-invert.png" alt="nose">
+		<img id="mug" src="images/mug.png">
 	</div>
-</div>
+
+	<div id="main-column">
+		<div class = "mural" id="top-mural"></div>
+		<div id="clearfix">
+			<header>
+				<h1>Scratch and Sniff Proust</h1>
+				<h2>Making Sense of Scents and Sentiments</h2>
+				<h2>A Book by Virginia Barry, M.D. <br> with artwork by Heather Hancock</h2>		
+			</header>
+		</div>
+		<!--want to try to float nav left-->
+			<nav class="clearfix">
+					
+
+					<div id="zero-nav-column" class="nav-column">
+						<div class="nav-link" id="red"><a href="#about-project">About <br> the project</a></div>
+						<img class="hand" id="zero-hand"  src="images/Hands/hand-invert.png" alt="scratching hand">
+						
+					</div>
+					<div id="first-nav-column" class="nav-column">
+						<div class="nav-link" id="red"><a href="#about-author">About <br> the author</a></div>
+						<img class="hand" id="first-hand"  src="images/Hands/hand-invert.png" alt="scratching hand">
+				
+					</div>
+					<div class="nav-column">
+						<div class="nav-link" id="yellow"><a href="#about-artist">About <br> the artist</a></div>
+						<img class="hand" id="second-hand" src="images/Hands/hand-invert.png" alt="scratching hand">
+					
+					</div>
+					<div class="nav-column">
+						<div class="nav-link" id="green"><a href="#neuroscience-of-smell">Neuroscience<br> of Smell</a></div>
+						<img class="hand" id="third-hand" src="images/Hands/hand-invert.png" alt="scratching hand">
+
+						
+					</div>	
+					<div class="nav-column" >
+						<div class="nav-link" id="blue"><a href="#first-chapter">First<br> chapter</a></div>
+						<img class="hand" id="fourth-hand" src="images/Hands/hand-invert.png" alt="scratching hand">
+					
+					</div>	
+					<div class="nav-column">
+						<div class="nav-link" id="event-box"><a href="#events">Events</a></div>
+						<img class="hand" id="fifth-hand" src="images/Hands/hand-invert.png" alt="scratching hand">
+					</div>		
+					
+			</nav>
+	</div>
+
 	<div id="right-side-bar">
-	<img src="images/Proust.jpg" alt="Marcel Proust">
+		<img  class="hidden" id="proust"  src="images/right-column/Proust.jpg" alt="Marcel Proust">
+		<img class="hidden" id="barry" src="images/right-column/barry.jpg" alt="Virginia Barry">
+		<img class="hidden" id="hancock" src="images/right-column/hancock.jpeg" alt="Muralist Heather Hancock">
+		<img class="hidden" id="neuron" src="images/right-column/neuron.jpg" alt="stained neuron photograph">
+
+		<img id="#front_cover" src="images/right-column/front_cover.jpg" alt="Scratch and Sniff Proust Front Cover">
+		<h2 id="purchase">Purchase Scratch and Sniff Proust</h2>
 	</div>
 
-<div id="about">
-	<div id="project-summary">
-		<p>The prose of Marcel Proust, 20th-century French modernist, transports his reader down Swann's Way through his words' mastery of sensation.  Early and often, his poignent descriptions of scent engage an instant transportation into the minds of his characters.  Dr. Virginia Barry, psychiatrist and psychoanolist, investigates the neurobiological architecture behind Proust's techniques.  In a fanciful twist on In Remembrance of Time Past, Dr. Barry provides a set of scratch and sniff scents and scientific discussions to illustrate the direct neural connection between scent and memory. Together with the stunning mural work of Chicago artist Heather Hancock, Dr. Barry opens up a fresh and exciting new way to interpret Proust's masterpiece.</p>
-	</div>
-	<div class ="mural" id="about-author-mural">
-	</div>
-	<div id="about-author">
-	</div>
-	<div class="mural" id="about-artist-mural">
-	</div>
-	<div id="about-artist">
-	</div>
-	<div class ="mural" id="neuroscience-of-smell-mural">
-	</div>
-	<div id="neuroscience-of-smell">
-	</div>
-	<div class="mural" id="first-chapter-mural">
-	</div>
-	<div id="first-chapter">
-	</div>
-	<div class="mural" id="events-mural">
-	</div>
-	<div id="events">
-	</div>
+
+	<div id="about">
+		<div class = "mural" id="about-mural"></div>
+
+		<div class="about-block" id="about-project">
+			<h2 class="about-header">About Scratch and Sniff Proust</h2>
+			<p class="about-text" >The prose of Marcel Proust, 20th-century French modernist, transports his reader down Swann's Way through his words' mastery of sensation.  Early and often, his poignent descriptions of scent engage an instant transportation into the minds of his characters.  Dr. Virginia Barry, psychiatrist and psychoanalyst, investigates the neurobiological architecture behind Proust's techniques.  In a fanciful twist on In Remembrance of Time Past, Dr. Barry provides a set of scratch and sniff scents and scientific discussions to illustrate the direct neural connection between scent and memory. Together with the stunning mural work of Chicago artist Heather Hancock, Dr. Barry opens up a fresh and exciting new way to interpret Proust's masterpiece.</p>
+		</div>
+		<div class = "mural" id="project-sum-mural"></div>
+
+		<div class="about-block"  id="about-author">
+			<h2 class="about-header">About the Author</h2>
+			<p class="about-text"> Dr. Virginia Barry is a psychoanalyst in private practice in Chicago, Illinois.  For over two decades, she has been engaged in studying the interface between neuroscience and psychoanalytic models of the mind.  Dr. Barry skillfully combines the words of Proust-psychology-art-prose-science and medicine to reveal the link between smell and emotion. A link we knew was there but did not understand …<br>
+			<br>
+
+			Author Dr. Barry writes: <br>
+			<br>
+			Memories elicited by smell are imbued with a kind of visceral and  emotional essence that sets them apart from memories called up by words or images alone. I am transported when I bury my nose in a bunch of freshly cut basil; whereas seeing a recipe for Insalata Caprese generates a grocery list. Another parched day of drought makes me wish for rain, but the smell of the earth-the petrichor-after that first rain makes me want to dance and fills me with optimism. The memories evoked by fragrances are rarely bland or colorless; they are drenched in emotion.<br>
+			<br>
+			Although he didn’t have neuroscience to illuminate why olfaction is so emotionally evocative, Marcel Proust understood the power of scent to unleash ancient, long forgotten memories that form the foundation of our emotional lives. As the title of his great work tells us, In Search of Lost Time (also translated from the French as The Remembrance of Things Past) is concerned with these memories and the stamp they place on the experience of the present. Scratch and Sniff Proust began as a wisp of a joke and has evolved into something much more-part neuroscience, part art, part psychoanalysis.<br>
+			<br>
+			A consistent compositional structure was developed for the glass art to connect with both literal objects referred to in each target quotation and the larger conceptual themes of the constructive nature of memory, the role of language in accessing memory and the neuroscience of signaling and transmission. Literal imagery is captured in gestural, instagram-style photographs. Each literal image has an associated scent.
+			</p>
+		
+		</div>
+		<div class="mural" id="about-author-mural"></div>
+
+		<div class="about-block" id="about-artist">
+			<h2 class="about-header">About the Artist</h2>
+			<p class="about-text"> 
+
+			Dr. Barry writes:<br>
+			<br>
+
+			I chose Heather as a collaborator given her integration of her visual art practice with a background in applied neurosciences. Her work with glass is about visual experience; she explores the many properties of glass to infuse spaces with meaning and interest, offering viewers a moment soon gone, yet filled with radiance. This approach is consistent with Proust’s extensive contemplation about light and shadow, reflections and contrasts. Heather’s art pieces offer visual interpretations for each section of the book, forming another connection with Proust’s inner world.</p>
+			<br>
+			<a href="http://heatherhancock.com/" alt="Heather Hancock's Website">Heather Hancock</a>
+		</div>
+		<div class="mural" id="about-artist-mural"></div>
+		<div class="about-block" id="neuroscience-of-smell">
+			<h2 class="about-header">Neuroscience of Smell</h2>
+			<p class="about-text">words words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words words </p>
+			
+		</div>
+		<div class="mural" id="neuroscience-of-smell-mural"></div>
+		
+		<div class="about-text" id="first-chapter">
+			<h2 class="about-header">First Chapter</h2>
+			<p class="about-text"> words words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words words</p>
+		</div>
+
+		<div class="mural" id="first-chapter-mural"></div>
+		
+		<div class="about-text" id="events">
+			<h2 class="about-header">Events</h2>
+			<p class="about-text">words words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words wordswords words words </p>
+		</div>
+		<div class="mural" id="events-mural"></div>
 	
 </div>	
 <script src="js/jquery-3.1.1.min.js"></script>
