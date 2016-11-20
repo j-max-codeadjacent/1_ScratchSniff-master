@@ -1,20 +1,4 @@
-//all in two seconds//
 
-/*
-$(".nav-link").on("click", function(){
-	var el = $(this).siblings(".hand"); 
-	var newone = el.clone(true);
-	 el.before(newone); 
-     el.remove();
-
-     var em= $("#smell-line");
-     var newEm = em.clone(true);
-     em.before(newEm);
-     em.remove();
- });
- */
-  	
-       //after clicking the link, trigger keyframe which moves hand up and then back and forth to imitate scratching.//
 
 
 
@@ -49,8 +33,9 @@ $(".nav-link").on("click", function(){
 	
 
  	var href = $("a", this).attr('href');
+	/*adding -200 after top was a super easy fix to the fixed header scroll problem!*/
 	setTimeout(function() {
-		$('html, body').animate({scrollTop:$(href).position().top}, 'slow');
+		$('html, body').animate({scrollTop:$(href).position().top-200}, 'slow');
 		el.removeClass("animateScratch");
 	}, 1500);
     
@@ -64,7 +49,7 @@ $(".nav-link").on("click", function(){
 
 
 
-//smell line goes up into nose//
+
 
 
 //brain lights up//
@@ -87,18 +72,21 @@ function authorPhoto() {
    	 if (document.body.scrollTop < 1200) {
     	$("#proust").addClass("show");
         $("#barry").removeClass("show");
+        $("#right-caption").html("Marcel Proust");
     }
 
     if (document.body.scrollTop > 1413) {
     	$("#proust").removeClass("show");
         $("#barry").addClass("show");
         $("#hancock").removeClass("show");
+        $("#right-caption").html("Dr. Virginia Barry");
     }
 
     if (document.body.scrollTop > 2711) {
         $("#barry").removeClass("show");
         $("#hancock").addClass("show");
         $("#neuron").removeClass("show");
+        $("#right-caption").html("Heather Hancock");
     }
 
 
@@ -106,6 +94,7 @@ function authorPhoto() {
         $("#barry").removeClass("show");
         $("#hancock").removeClass("show");
         $("#neuron").addClass("show");
+        $("#right-caption").html("Neuron Stained and Photographed by Dr. Justine Barry");
     }
 
     //added nav bar to the scroll function

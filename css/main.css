@@ -54,12 +54,28 @@ h2 {
 
 }
 
+h3{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1em;
+	min-height: 30px;
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+	clear: both;
+	float: left;
+	padding-bottom: 10px;
+	margin:0;
+	color: #ededf3;
+	background-color: black;
+
+}
+
 #left-side-bar{
 	width:19%;
 	float:left;
 	background-color: black;
 	min-height: 5000px;
-	border-right: 8.5px solid rgb(202, 98, 99);
+	border-right: 8.5px solid rgba(163, 197, 180, .7);
 	position: relative;
 }
 
@@ -106,6 +122,7 @@ h2 {
 		float: left;
 		min-height: 100px;
 		margin-right: 0;
+		padding-top: 30px;
 		background: black;
 		background-attachment: fixed;
 		background-size: 75%;
@@ -113,9 +130,11 @@ h2 {
 
 		.nav-fixed{
 			top: 0;
+			right: 19.5%; 
 			position: fixed;
-			width: 60%;
+			width: 61%;
 			z-index: 10;
+			border-bottom: 8.5px solid rgba(163, 197, 180, .7);
 
 		}
 
@@ -184,8 +203,9 @@ h2 {
 		padding-top: 20px;
 		position: relative;
 		float: right;
+		color:black;
 		background-color: black;
-		border-left: 8.5px solid rgb(202, 98, 99);
+		border-left: 8.5px solid rgba(163, 197, 180, .7);
 
 
 
@@ -204,6 +224,17 @@ h2 {
 
 		}
 
+		#right-caption{
+			font-size: 1em;
+			width: 15%;
+			word-wrap: break-word;
+			position: fixed;
+			top: 250px;
+			color: white;
+			text-align: left;
+			padding-left: 30px;
+		}
+
 		#barry{
 			width:30%;
 			height: auto;
@@ -220,16 +251,23 @@ h2 {
 		}
 
 		#front_cover{
-			width: 30%;
+			position: fixed;
+			width: 80%;
 			height: auto;
-			top: 50%;
+			top: 350px;
 		}
 
 		#purchase{
 			position: fixed;
-			top: 30%;
+			width: 20%;
+			height: 100px;
+			top: 550px;
 			z-index: 1;
 			color: white;
+			background-color: none;
+			text-align: initial;
+			padding: 10px;
+		
 		}
 
 		.hidden{
@@ -252,6 +290,7 @@ h2 {
 	}
 
 		.about-block{
+			width: 100%;
 			min-height: 100px;
 			background-color: white;
 			padding: 10px;
@@ -268,41 +307,54 @@ h2 {
 		.about-header{
 			background: white;
 			color: black;
+		
 		}
 
+		/*I used a pseudo element to allow for the links to position correctly after a nav bar click*/
+		
+
+
 		.mural{
-			height:500px;
+			width: 102%;
+			height:400px;
 			background-attachment: fixed;
 			background-size: 75%;
+			border-top: 8.5px solid rgba(163, 197, 180, .7);
+			border-bottom: 8.5px solid rgba(163, 197, 180, .7);
 		}
 		#top-mural{
 			height: 100px;
 			background-image: url("../images/Murals/combray.jpg");
 			background-attachment: fixed;
 			background-size: 75%;
-			background-position: center;
+			background-position: 0px -40px;
+
 		}
 
 		#about-mural{
-			background-image: url("../images/Murals/combray.jpg");
+
+			background-image: url("../images/Murals/flourish.jpg");
 			background-attachment: fixed;
 			background-size: 75%;
+			background-position: center;
 		}
 
 		#project-sum-mural{
 			
-			background-image: url("../images/Murals/combray.jpg");
+			background-image: url("../images/Murals/stairs.jpg");
 			background-attachment: fixed;
 			background-size: 75%;
+			background-position: center;
 		}
 
 
 
 
 		#about-author-mural {
-			background-image: url("../images/Murals/combray.jpg");	
+			background-image: url("../images/Murals/hawthorns.jpg");	
 			background-attachment: 	fixed;
 			background-size: 75%;
+			background-position: center;
 		}
 
 
@@ -315,26 +367,39 @@ h2 {
 			background-image: url("../images/Murals/combray.jpg");	
 			background-attachment: 	fixed;
 			background-size: 75%;
+			background-position: center;
 		}
 
-		#neuroscience-of-smell{
-			height: 200px;
-		}
-
-		#first-chapter{
-			height: 200px;
-			background-image: url("../images/Murals/hawthorns.jpg");
-			background-attachment: 	fixed;
-			background-size: 1000px;
-		}
-
-
-		#events{
-			height: 200px;
+		#neuroscience-of-smell-mural{
 			background-image: url("../images/Murals/asparagus.jpg");
 			background-attachment: 	fixed;
 			background-size: 1000px;
+			background-position: center;
+
 		}
+
+		#neuroscience-of-smell{
+			min-height: 200px;
+		}
+		#first-chapter-mural{
+			background-image: url("../images/Murals/dreams.jpg");
+			background-attachment: 	fixed;
+			background-size: 1000px;
+			background-position: center;
+		}
+
+		#first-chapter{
+			min-height: 200px;
+		}	
+
+
+		#events{
+			min-height: 200px;
+		}
+
+
+
+
 
 /*keyframe that moves the hand up and then wiggles to imitate scratching the link*/
 @keyframes scratch{
@@ -387,8 +452,8 @@ h2 {
 
 /*key frames for the smells to go up into the nose*/
 #smell-line{ 
-
-		color: white;
+		/*at first, I tried to hide a white tilda behind the cup, but on a page resize, it showed up.  
+		I fixed it by putting the color: white tag in the animateSniff class*/
 		font-size: 2em;
 		-webkit-transform: rotate(90deg);
 	    -moz-transform: rotate(90deg);
@@ -397,8 +462,8 @@ h2 {
 	    transform: rotate(90deg);
 		position: fixed;
 		top: 80%;
-		left: 8%;
-		z-index: 2;
+		left: 4%;
+		z-index: 0;
 		
 	}
 
@@ -406,34 +471,34 @@ h2 {
 
 @keyframes sniff{
  
-	0%{opacity: 0;}
+	
 	40%{opacity: 0;}
    	50%{opacity: 1;}
    	60% {top: 70%;}
    	70% {top: 60%;}
-   	80% {top: 50%;}
+   	80% {top: 55%;}
    	100% {opacity:0;}
 	
 }
 
 @-webkit-keyframes sniff {
 	
-	0%{opacity: 0;}
+
 	40%{opacity: 0;}
    	50%{opacity: 1;}
 	60% {top: 70%;}
    	70% {top: 60%;}
-   	80% {top: 50%;}
+   	80% {top: 55%;}
    	100% {opacity:0;}
 }
 @-moz-keyframes sniff {
 	
-	0%{opacity: 0;}
+
 	40%{opacity: 0;}
    	50%{opacity: 1;}
    		60% {top: 70%;}
    	70% {top: 60%;}
-   	80% {top: 50%;}
+   	80% {top: 55%;}
    	100% {opacity:0;}
 }
 
@@ -443,8 +508,10 @@ h2 {
 
 }
 .animateSniff {
-	display: inline-block;
-	animation-delay: 1s;
-	-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
+	
+	color: white;
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;
 	animation: sniff ease-in-out 2s 1;
+}
