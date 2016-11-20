@@ -82,7 +82,7 @@ function authorPhoto() {
         $("#right-caption").html("Dr. Virginia Barry");
     }
 
-    if (document.body.scrollTop > 2711) {
+    if (document.body.scrollTop > 2046) {
         $("#barry").removeClass("show");
         $("#hancock").addClass("show");
         $("#neuron").removeClass("show");
@@ -90,11 +90,11 @@ function authorPhoto() {
     }
 
 
-    if (document.body.scrollTop > 3379) {
+    if (document.body.scrollTop > 3049) {
         $("#barry").removeClass("show");
         $("#hancock").removeClass("show");
         $("#neuron").addClass("show");
-        $("#right-caption").html("Neuron Stained and Photographed by Dr. Justine Barry");
+        $("#right-caption").html("<h4>Neuron Stained and Photographed by Dr. Justine Barry</h4>");
     }
 
     //added nav bar to the scroll function
@@ -106,6 +106,7 @@ function authorPhoto() {
 	}
 
 };
+
 
 /*window.onscroll=  function() {
 	if (document.body.scrollTop > 380){

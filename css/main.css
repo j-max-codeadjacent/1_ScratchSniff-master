@@ -70,11 +70,26 @@ h3{
 
 }
 
+h4{
+	font-family: 'Libre Baskerville', serif;
+	font-size: .8em;
+	min-height: 30px;
+	width: 100%;
+	margin-top: 5px;
+	text-align: center;
+	clear: both;
+	float: left;
+	padding-bottom: 10px;
+	margin:0;
+	color: #ededf3;
+	background-color: black;
+}
+
 #left-side-bar{
 	width:19%;
 	float:left;
 	background-color: black;
-	min-height: 5000px;
+	min-height: 6000px;
 	border-right: 8.5px solid rgba(163, 197, 180, .7);
 	position: relative;
 }
@@ -169,7 +184,8 @@ h3{
 			top: 50%;
 		}
 
-			
+
+
 
 
 
@@ -198,7 +214,7 @@ h3{
 
 	#right-side-bar{
 		width:19%;
-		min-height: 5000px;
+		min-height: 7000px;
 		background: white;
 		padding-top: 20px;
 		position: relative;
@@ -250,26 +266,30 @@ h3{
 			height: auto;
 		}
 
-		#front_cover{
-			position: fixed;
-			width: 80%;
-			height: auto;
-			top: 350px;
-		}
-
-		#purchase{
-			position: fixed;
-			width: 20%;
-			height: 100px;
-			top: 550px;
-			z-index: 1;
-			color: white;
-			background-color: none;
-			text-align: initial;
-			padding: 10px;
 		
+
+		#right-side-bar #paypal{
+		
+			position: fixed;
+			width: 5%;
+			top: 300px;
+			right: 13%;
 		}
 
+		#right-side-bar #facebook{
+			position: fixed;
+			width: 5%;
+			top: 400px;
+		}
+		#right-side-bar #fb-like{
+			font-size: .8em;
+			width: 8%;
+			position: fixed;
+			right: 10%;
+			top: 410px;
+			color: white;
+		}
+		
 		.hidden{
 			display: none;
 		}
@@ -277,20 +297,16 @@ h3{
 		.show{
 			display:inline-block;
 		}
-
-
 	#about {
 		width: 60%;
 		float: left;
 		background: none;
 		font-weight: normal;
 		font-family: 'Open Sans', sans-serif;
-
-
 	}
 
 		.about-block{
-			width: 100%;
+			width: 102%;
 			min-height: 100px;
 			background-color: white;
 			padding: 10px;
@@ -298,22 +314,19 @@ h3{
 
 		.about-text{
 			background: white;
-			width: 100%;
+			width: 95%;
 			min-height: 100px;
 			margin: 0;
-			padding:5px;
+			padding:10px;
 		}
 
 		.about-header{
 			background: white;
 			color: black;
-		
 		}
 
+
 		/*I used a pseudo element to allow for the links to position correctly after a nav bar click*/
-		
-
-
 		.mural{
 			width: 102%;
 			height:400px;
@@ -328,9 +341,7 @@ h3{
 			background-attachment: fixed;
 			background-size: 75%;
 			background-position: 0px -40px;
-
 		}
-
 		#about-mural{
 
 			background-image: url("../images/Murals/flourish.jpg");
@@ -389,8 +400,8 @@ h3{
 		}
 
 		#first-chapter{
-			min-height: 200px;
-		}	
+			min-height: 500px;
+		}
 
 
 		#events{
@@ -514,4 +525,14 @@ h3{
 	-webkit-animation-delay: .5s;
 	-moz-animation-delay: .5s;
 	animation: sniff ease-in-out 2s 1;
+}
+
+#first-chapter{ 
+	width: 100%;
+ }
+#sample-chapter{
+	width: 90%;
+	min-height: 1000px;
+	left: 10px;
+
 }
