@@ -317,12 +317,17 @@ h4{
 			width: 95%;
 			min-height: 100px;
 			margin: 0;
-			padding:10px;
+			padding: 10px;	
+
 		}
+	
+
 
 		.about-header{
 			background: white;
 			color: black;
+			width:90%;
+			margin-left:8px;
 		}
 
 
@@ -370,7 +375,8 @@ h4{
 
 
 		#about-artist a{
-			margin-left: 20%;
+			margin-left: 32%;
+
 		}
 
 
@@ -393,6 +399,8 @@ h4{
 			min-height: 200px;
 		}
 		#first-chapter-mural{
+			padding-left: 0;
+			width: 102%;
 			background-image: url("../images/Murals/dreams.jpg");
 			background-attachment: 	fixed;
 			background-size: 1000px;
@@ -401,6 +409,7 @@ h4{
 
 		#first-chapter{
 			min-height: 500px;
+			padding: 0;
 		}
 
 
@@ -408,6 +417,9 @@ h4{
 			min-height: 200px;
 		}
 
+		#credits{
+			padding-top: 30px;
+		}
 
 
 
@@ -540,7 +552,13 @@ h4{
 		display:none;
 	}
 
-@media screen and (max-width: 600px){
+.mobile-nav-link{
+	display: none;
+}
+
+@media screen and (max-width: 800px){
+	
+
 	#right-side-bar{
 		display: none;
 	}
@@ -553,63 +571,91 @@ h4{
 		width: 100%;
 	}
 
-	nav{
-		width:90%;
-		margin-left: 12%;
-		margin-right:5%;
-		min-height:200px;
-	}
-	.nav-column{
-		height: 100px;
-		width: 90%;
-		margin-left: 5%;
-		margin-right:5%;
-		float: left;
-		clear: both;
-		padding-bottom: 50px;
-	}
+	header{
 
-	.nav-link{
-		height:100px;
-		font-size: 3.2em;
-		padding-bottom: 20px;
-		
-	}
-
-		.#zero-nav-column{
-			margin-left: 5%;
-			}
-		#event-box{
-			height: 110px; 
+		width: 100%;
+		min-height: 50px;
+		background-color: black;
 		}
-
 	h1{
+		min-height: 50px;
 		width: 90%;
-		font-size:7em;
-		padding: 20px;
+		font-size:3em;
+		padding: 5px;
+		padding-bottom: 0;
+		margin:0;
 		margin-left:5%;
 		margin-right:5%;
 	}
 
 	h2{
 		width: 80%;
-		margin-left:10%;
+		margin:0;
+		margin-left:8%;
 		margin-right:10%;
-		font-size: 3em;
-		padding: 40px;
-		padding-top: 10px;
+		font-size: 1.5em;
+		padding: 20px;
+		padding-top: 5px;
 		padding-bottom: 10px;
 	}
 
 	h3{
 		width: 80%;
-		margin-left:10%;
+		margin-left:5%;
 		margin-right:10%;
-		font-size: 2.5em;
+		font-size: 1em;
 		padding: 40px;
 		padding-top: 10px;
 		padding-bottom:10px;
 	}
+
+	
+
+	nav{
+		width:90%;
+		margin-left: 5%;
+		margin-right:5%;
+		min-height:5px;
+	}
+	.nav-column{
+		min-height: 30px;
+		width: 90%;
+		margin-left: 8%;
+		margin-right:5%;
+		float: left;
+		clear: both;
+		padding-bottom: 2px;
+	}
+
+	.nav-link{
+		display: none;
+	}
+	.mobile-nav-link{
+
+		position: absolute;
+		width: 90%;
+		text-align: center;
+		background-color: #A5C5B2;
+		text-transform: uppercase;
+		border-radius: 10px;
+		box-shadow: inset 0 -3px 0 #70ab60;
+		display:inline-block;
+		height:30px;
+		font-size: 1.5em;
+		padding-bottom: 2px;
+		
+	}
+
+	#zero-nav-column{
+			margin-left: 8%;
+			}
+	#event-box{
+			height: 20px;
+			padding-top: 0;
+			padding-bottom: 8px; 
+		}
+
+	
 	#about{
 		width: 100%;
 	}
@@ -624,9 +670,9 @@ h4{
 	}
 
 	input{
-		width: 500px;
-		margin-left: 275px;
-		margin-top: 25px;
+		width: 150px;
+		margin-left: 310px;
+		margin-top: 15px;
 	}
 }
 

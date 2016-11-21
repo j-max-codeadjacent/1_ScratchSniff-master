@@ -94,7 +94,7 @@ function authorPhoto() {
         $("#barry").removeClass("show");
         $("#hancock").removeClass("show");
         $("#neuron").addClass("show");
-        $("#right-caption").html("<h4>Neuron Stained and Photographed by Dr. Justine Barry</h4>");
+        $("#right-caption").html("");
     }
 
     //added nav bar to the scroll function
