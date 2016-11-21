@@ -89,7 +89,7 @@ h4{
 	width:19%;
 	float:left;
 	background-color: black;
-	min-height: 6000px;
+	min-height: 7000px;
 	border-right: 8.5px solid rgba(163, 197, 180, .7);
 	position: relative;
 }
@@ -290,6 +290,17 @@ h4{
 			top: 410px;
 			color: white;
 		}
+
+		#right-side-bar #muralDescription{
+			position: fixed;
+			font-family: 'Open Sans', sans-serif;
+			font-size: .5em;
+			font-weight: normal;
+			top: 500px;
+			padding: 15px;
+			color: #ededf3;
+
+		}
 		
 		.hidden{
 			display: none;
@@ -327,7 +338,7 @@ h4{
 		.about-header{
 			background: white;
 			color: black;
-			width:90%;
+			width:95%;
 			margin-left:8px;
 		}
 
@@ -354,6 +365,53 @@ h4{
 			background-attachment: fixed;
 			background-size: 75%;
 			background-position: center;
+		}
+
+		.hoverText{
+			display: none;
+
+		}
+
+		 #about-mural #flourishHover{
+			position: absolute;
+			color: #A63B52;
+			top: 700px;
+		}
+
+
+
+		#stairsHover{
+			color: #A63B52;
+			top: 1250px;
+		}
+
+		#hawthornsHover{
+			color: #A63B52;
+			top: 2030px;
+		}
+
+		#combrayHover{
+			color: #A63B52;
+			top: 2900px;
+		}
+
+		#asparagusHover{
+			color: #A63B52;
+			top: 3650px;
+		}
+
+		#dreamsHover{
+			color: #A63B52;
+			top: 5100px;
+		}
+
+		.showHoverText{
+			font-size: 2em; 
+			color: white; 
+			position: absolute;
+			top: 700px;
+			right: 15px;
+			background: none;
 		}
 
 		#project-sum-mural{
@@ -547,6 +605,7 @@ h4{
 	width: 90%;
 	min-height: 1000px;
 	left: 10px;
+	margin-left: 5%;
 }
 
 #mobile-paypal{
@@ -556,6 +615,12 @@ h4{
 .mobile-nav-link{
 	display: none;
 }
+
+#hamburger{
+	display: none;
+}
+
+
 
 @media screen and (max-width: 800px){
 	
@@ -631,6 +696,7 @@ h4{
 	.nav-link{
 		display: none;
 	}
+
 	.mobile-nav-link{
 
 		position: absolute;
@@ -647,6 +713,8 @@ h4{
 		
 	}
 
+
+
 	#zero-nav-column{
 			margin-left: 8%;
 			}
@@ -657,15 +725,6 @@ h4{
 		}
 
 
-	.mobile-nav-fixed{
-			top: 0;
-			right: 19.5%; 
-			position: fixed;
-			width: 61%;
-			z-index: 10;
-			border-bottom: 8.5px solid rgba(163, 197, 180, .7);
-
-		}
 	
 	#about{
 		width: 100%;
@@ -679,8 +738,27 @@ h4{
 		display:inline-block;
 		margin-left: 36%;
 
+	}
 
+/*
+	.stickyMobileNav{
+		position: fixed;
+		display: inline-block;
+	}
 
+	.stickyPaypal{
+		display: inline-block;
+		position: fixed;
+		top: 0;
+
+	}
+*/
+
+	.showHamburger{
+		display: inline-block;
+		float: right;
+		width: 5%;
+		height: 20px;
 	}
 
 	input{

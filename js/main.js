@@ -35,7 +35,7 @@ $(".nav-link").on("click", function(){
  	var href = $("a", this).attr('href');
 	/*adding -200 after top was a super easy fix to the fixed header scroll problem!*/
 	setTimeout(function() {
-		$('html, body').animate({scrollTop:$(href).position().top-200}, 'slow');
+		$('html, body').animate({scrollTop:$(href).position().top-275}, 'slow');
 		el.removeClass("animateScratch");
 	}, 1500);
     
@@ -98,7 +98,7 @@ function authorPhoto() {
     }
 
     //added nav bar to the scroll function
-     if ($(window).width() > 800) {
+    if ($(window).width() > 800) {
 	    if (document.body.scrollTop > 380){
 			$("nav").addClass("nav-fixed");
 		}
@@ -111,22 +111,28 @@ function authorPhoto() {
 	 	$("nav").removeClass("nav-fixed");
 	 }
 
-
+/*
+	  if ($(window).width() < 800) {
+	  	if(document.body.scrollTop > 380){
+	  		//in the media query, the nav-link class has display none
+	  		$("nav")removeClass("mobile-nav-link");
+	  		$("nav")addClass("stickyMobileNav");
+	  		$("#hamburger")addClass("showHamburger");
+	  		$("#mobile-paypal")addClass("stickyPaypal");
+	  	}
+	  }
+*/
 };
 
 
-/*window.onscroll=  function() {
-	if (document.body.scrollTop > 380){
-		$("nav").addClass("nav-fixed");
-	}
-	if (document.body.scrollTop < 380){
-		$("nav").removeClass("nav-fixed");
-	}
+/*This only half works.
 
+if ($(window).width() > 800) {
+	$(".mural").hover(function(){
+		$("h3", this).removeClass("hoverText");
+		$("h3", this).addClass("showHoverText");
+		}, function(){
+		$("h3", this).removeClass("showHoverText");
+		$("h3", this).addClass("hoverText");
+	})	
 };*/
-
-/*can't get this to work, so I'll sue fixed for now.
-$("#right-side-bar").scroll(function(){
-	$(this).css('top', $(this).scrollTop());
-});
-*/
