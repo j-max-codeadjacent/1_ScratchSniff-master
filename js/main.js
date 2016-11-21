@@ -69,24 +69,24 @@ window.addEventListener("load", proustPic, false);
 
 window.onscroll = function() {authorPhoto()};
 function authorPhoto() {
-   	 if (document.body.scrollTop < 1200) {
+   	 if (document.body.scrollTop < 1181) {
     	$("#proust").addClass("show");
         $("#barry").removeClass("show");
-        $("#right-caption").html("Marcel Proust");
+       
     }
 
-    if (document.body.scrollTop > 1413) {
+    if (document.body.scrollTop > 1181) {
     	$("#proust").removeClass("show");
         $("#barry").addClass("show");
         $("#hancock").removeClass("show");
-        $("#right-caption").html("Dr. Virginia Barry");
+    
     }
 
     if (document.body.scrollTop > 2046) {
         $("#barry").removeClass("show");
         $("#hancock").addClass("show");
         $("#neuron").removeClass("show");
-        $("#right-caption").html("Heather Hancock");
+      
     }
 
 
@@ -94,16 +94,23 @@ function authorPhoto() {
         $("#barry").removeClass("show");
         $("#hancock").removeClass("show");
         $("#neuron").addClass("show");
-        $("#right-caption").html("");
+       
     }
 
     //added nav bar to the scroll function
-    if (document.body.scrollTop > 380){
-		$("nav").addClass("nav-fixed");
+     if ($(window).width() > 800) {
+	    if (document.body.scrollTop > 380){
+			$("nav").addClass("nav-fixed");
+		}
 	}
 	if (document.body.scrollTop < 380){
 		$("nav").removeClass("nav-fixed");
 	}
+
+	 if ($(window).width() < 800) {
+	 	$("nav").removeClass("nav-fixed");
+	 }
+
 
 };
 

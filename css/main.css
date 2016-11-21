@@ -100,6 +100,7 @@ h4{
 		position: fixed;
 		left:5%;
 		top:38%;
+		z-index: 2;
 	}
 	#mug{
 		width: 15%;
@@ -655,6 +656,16 @@ h4{
 			padding-bottom: 8px; 
 		}
 
+
+	.mobile-nav-fixed{
+			top: 0;
+			right: 19.5%; 
+			position: fixed;
+			width: 61%;
+			z-index: 10;
+			border-bottom: 8.5px solid rgba(163, 197, 180, .7);
+
+		}
 	
 	#about{
 		width: 100%;
@@ -666,12 +677,15 @@ h4{
 
 	#mobile-paypal{
 		display:inline-block;
+		margin-left: 36%;
+
+
 
 	}
 
 	input{
 		width: 150px;
-		margin-left: 310px;
+		
 		margin-top: 15px;
 	}
 }
