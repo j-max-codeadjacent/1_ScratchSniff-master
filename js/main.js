@@ -1,18 +1,10 @@
 
-
-
-
- //delay removing the class so the link is clickable again. I'm not sure how this code works.
-
-
-
 $(".nav-link").on("click", function(){
 	var el = $(this).siblings(".hand");
 	
 	el.removeClass("animateScratch");
 	el.addClass("animateScratch");
 	
-	//this works with .nav-link but not nav-link a//
 	//delay the link so the animation can run//
 	var em = $("#smell-line");
 	em.removeClass("animateSniff");
@@ -42,22 +34,6 @@ $(".nav-link").on("click", function(){
     return false;
   
 });
-
-
-
-
-
-
-
-
-
-
-//brain lights up//
-//user is brought to that section of the page//
-
-
-//js on load, brains flash colors
-
 
 
 //When scroll reaches #about author, replace proust with Virginia's image*/
@@ -111,28 +87,23 @@ function authorPhoto() {
 	 	$("nav").removeClass("nav-fixed");
 	 }
 
-/*
-	  if ($(window).width() < 800) {
-	  	if(document.body.scrollTop > 380){
-	  		//in the media query, the nav-link class has display none
-	  		$("nav")removeClass("mobile-nav-link");
-	  		$("nav")addClass("stickyMobileNav");
-	  		$("#hamburger")addClass("showHamburger");
-	  		$("#mobile-paypal")addClass("stickyPaypal");
-	  	}
-	  }
-*/
 };
 
 
-/*This only half works.
+
+$("#hamburger").on("click", function(){
+	$(".nav-column").css("display", "inline-block");
+	$("#mobile-paypal").css("display", "inline-block");
+});
+
+
+$(".mobile-nav-link").on("click", function(){
+	$(".nav-column").css("display", "none");
+	$("#mobile-paypal").css("display", "none");
+
+});
 
 if ($(window).width() > 800) {
-	$(".mural").hover(function(){
-		$("h3", this).removeClass("hoverText");
-		$("h3", this).addClass("showHoverText");
-		}, function(){
-		$("h3", this).removeClass("showHoverText");
-		$("h3", this).addClass("hoverText");
-	})	
-};*/
+	$(".nav-column").css("display", "inline-block");
+	$("#mobile-paypal").css("display", "none");
+	};

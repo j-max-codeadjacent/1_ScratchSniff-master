@@ -1,4 +1,4 @@
-/*problems: brains misalign when window shrinks*/;
+
 
 * {
     box-sizing: border-box;
@@ -138,6 +138,7 @@ h4{
 		float: left;
 		min-height: 100px;
 		margin-right: 0;
+		margin-left: 30px;
 		padding-top: 30px;
 		background: black;
 		background-attachment: fixed;
@@ -320,12 +321,12 @@ h4{
 		.about-block{
 			width: 102%;
 			min-height: 100px;
-			background-color: white;
+			background-color: #ededf3;
 			padding: 10px;
 		}
 
 		.about-text{
-			background: white;
+			background: #ededf3;
 			width: 95%;
 			min-height: 100px;
 			margin: 0;
@@ -336,7 +337,7 @@ h4{
 
 
 		.about-header{
-			background: white;
+			background: #ededf3;
 			color: black;
 			width:95%;
 			margin-left:8px;
@@ -435,6 +436,7 @@ h4{
 
 		#about-artist a{
 			margin-left: 32%;
+			min-height: 200px;
 
 		}
 
@@ -477,6 +479,7 @@ h4{
 		}
 
 		#credits{
+			font-size: .5em;
 			padding-top: 30px;
 		}
 
@@ -684,14 +687,44 @@ h4{
 		min-height:5px;
 	}
 	.nav-column{
+		display: none;
+		position: fixed;
 		min-height: 30px;
-		width: 90%;
-		margin-left: 8%;
-		margin-right:5%;
-		float: left;
+		width: 40%;
+		margin-left: 0;
+		margin-right:0;
+		float: right;
 		clear: both;
 		padding-bottom: 2px;
 	}
+
+	#zero-nav-column{
+		top: 25px;
+		right: 0px;
+	}
+
+	#first-nav-column{
+		top: 65px;
+		right: 0px;
+	}
+	#second-nav-column{
+		top: 105px;
+		right: 0px;
+	}
+	#third-nav-column{
+		top: 145px;
+		right: 0px;
+	}
+
+	#fourth-nav-column{
+		top: 185px;
+		right: 0px;
+	}
+	#fifth-nav-column{
+		top: 225px;
+		right: 0px;
+	}
+
 
 	.nav-link{
 		display: none;
@@ -715,9 +748,7 @@ h4{
 
 
 
-	#zero-nav-column{
-			margin-left: 8%;
-			}
+	
 	#event-box{
 			height: 20px;
 			padding-top: 0;
@@ -735,27 +766,20 @@ h4{
 	}
 
 	#mobile-paypal{
-		display:inline-block;
-		margin-left: 36%;
+		display: none;
+		position: fixed; 
+		top: 250px;
+		right: 10px;
+	
+		padding-right: 5%;
 
 	}
 
-/*
-	.stickyMobileNav{
-		position: fixed;
-		display: inline-block;
-	}
-
-	.stickyPaypal{
+	#hamburger{
 		display: inline-block;
 		position: fixed;
-		top: 0;
-
-	}
-*/
-
-	.showHamburger{
-		display: inline-block;
+		top: 10px;
+		right: 10px;
 		float: right;
 		width: 5%;
 		height: 20px;
@@ -763,7 +787,6 @@ h4{
 
 	input{
 		width: 150px;
-		
 		margin-top: 15px;
 	}
 }
